@@ -1,14 +1,13 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import os, sys, re, json
 from shell_printing import *
 import feedparser
 
 FILER_TITLE_RE      = re.compile(r'(.*) - (.*) \((.*)\) \((.*)\)')
+
 config_file_to_use  = "./rss_configs/sec_rss_config.json"
-
 announcement_print("Opening RSS Config Feed(" + config_file_to_use + ")")
-
 config      = json.loads(open(config_file_to_use).read())
 feed_url    = str(config["RSS Feed URL"] + "&count=" + str(config["Count"]))
 
