@@ -38,7 +38,7 @@ for entry in full_data["entries"]:
         }
 
         green_print("Entry(" + str(idx) + ") => Data(" + json.dumps(new_hash) + ")\n")
-    except Exception,e:
+    except Exception:
         red_print("ERROR: Failed to parse Entry(" + str(idx) + ") Data(" + str(entry) + ")")
     # end of try/ex
 

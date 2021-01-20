@@ -10,9 +10,13 @@ Setup
 
 To run this have the python dependencies installed:
 
-feedparser
+ - **feedparser**
+  
+   To install feedparser,
 
-json
+    `sudo apt install python3-feedparser`
+
+ - **json**
 
 Usage
 ------

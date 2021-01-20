@@ -7,19 +7,19 @@ END_COLOR           = '\033[0m'
 
 
 def announcement_print(msg):
-    print "" + WARNING_COLOR + str(msg) + END_COLOR
+    print (WARNING_COLOR + str(msg) + END_COLOR)
     return None
 # end of announcement_print
 
 
 def green_print(msg):
-    print "" + GREEN_COLOR + str(msg) + END_COLOR
+    print (GREEN_COLOR + str(msg) + END_COLOR)
     return None
 # end of green_print
 
 
 def red_print(msg):
-    print "" + FAIL_COLOR + str(msg) + END_COLOR
+    print (FAIL_COLOR + str(msg) + END_COLOR)
     return None
 # end of red_print
 
